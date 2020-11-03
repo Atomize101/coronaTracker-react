@@ -36,17 +36,6 @@ const Chart = ({ data: confirmed, recovered, deaths }, country) => {
 						fill: true,
 					},
 				],
-				options: {
-					scales: {
-						yAxes: [
-							{
-								ticks: {
-									reverse: true,
-								},
-							},
-						],
-					},
-				},
 			}}
 		/>
 	) : null;
