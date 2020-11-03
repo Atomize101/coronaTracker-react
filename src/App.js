@@ -7,6 +7,7 @@ import { fetchData } from './api';
 class App extends React.Component {
 	state = {
 		data: {},
+		country: '',
 	};
 
 	async componentDidMount() {
@@ -19,6 +20,7 @@ class App extends React.Component {
 		const fetchedData = await fetchData(country);
 
 		console.log(fetchedData);
+		this.setState({ data: fetchedData, country: country });
 		// Fetch data
 		// Set State
 	};
