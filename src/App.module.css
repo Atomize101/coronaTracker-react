@@ -11,7 +11,17 @@ body {
 
 .image {
 	height: 10;
-	width: 16%;
+	width: 20%;
 	border-radius: 50%;
 	margin-top: 10px;
+}
+
+@media (max-width: 770px) {
+	.container {
+		margin: 0 10%;
+	}
+
+	.image {
+		width: 100%;
+	}
 }
